@@ -9,7 +9,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  version = "~> 1.34.0"
+  #version = "~> 1.34.0"
   #subscription_id = "${var.subscription_id}"
   #tenant_id = "${var.tenant_id}"
 }
