@@ -5,6 +5,12 @@ terraform {
       version = "=2.46.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "terraform-test"
+    storage_account_name = "henrystore"
+    container_name       = "terraform"
+    key                  = "TerraformTemplate"
+  }
 }
 
 provider "azurerm" {
